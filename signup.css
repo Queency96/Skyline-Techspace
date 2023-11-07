@@ -1,0 +1,180 @@
+/* removing margin and padding from the whole document */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* setting the body colour */
+body{
+    background-color: blue;
+}
+
+
+/* design for the home butter starts here */
+.container{
+    background-color: black;
+    width: 60%;
+    margin: 10% auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container .home{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 40px;
+}
+
+.home:hover{
+    color: blue;
+}
+
+/* design for the form starts here */
+.white{
+    background-color: white;
+    width: 80%;
+    margin: 10% auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h1{
+    color: blue;
+}
+
+
+/* sosial media design starts here */
+.sociamedia, .info{
+    margin: 15px 0px;
+    text-transform: capitalize;
+}
+
+.sociamedia a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    margin: 0px 5px;
+    color: white;
+    border-radius: 10px;
+}
+
+.sociamedia a:first-child{
+    background-color: #3b5998; 
+}
+
+.sociamedia a:nth-child(2){
+    background-color: #1DA1F2;
+}
+
+.sociamedia a:last-child{
+    background-color: #db4a39;
+}
+
+/* design for the divider between social media and the form */
+.divide{
+    display: flex;
+    align-items: center;
+}
+
+.divide span{
+    border: 1px solid blue;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.divide::before{
+    content: "";
+    background-color: blue;
+    padding: 1px;
+    width: 50%;
+    margin: 0px 5px 0px 9%;
+}
+
+.divide::after{
+    content: "";
+    background-color: blue;
+    padding: 1px;
+    width: 50%;
+    margin: 0px 9% 0px 5px;
+}
+
+/* form inputs design starts here */
+input[type=text], input[type=email], input[type=password]{
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding-left: 20px;
+}
+
+.info span{
+    font-size: 15px;
+    position: relative;
+    left: 18px;
+    color: blue;
+}
+
+/* Register and Submit button design here */
+input[type=submit]{
+    width: 82%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* for tablet responsive */
+
+@media screen and (max-width: 881px){
+    .sociamedia span{
+    font-size:40px;
+    margin: 5px;}
+
+    .sociamedia a{
+        font-size: 12px;
+        border-radius: 10px;
+    }
+
+    .sociamedia span{
+        font-size: 10px;
+    }
+    
+}
+
+/* for mobile responsive */
+
+@media screen and (max-width: 715px){
+    .sociamedia{
+        width: 100%;
+    }
+    .container {
+    width: 100%;
+    }
+
+    .sociamedia .sp2{
+        display: none;
+    }
+
+    .sociamedia span{
+        font-size: 20px;
+    }
+
+    .white{
+        width: 90%;
+    }
+
+    p{
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+}
